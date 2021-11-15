@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ANDREA GUZMAN - RETO2</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/misFunciones.js"></script>
+    </head>
+    <body>
+        <center>
+            <h1>FORMULARIOS RETO 2</h1>
+            <fieldset style="width: 50%;">
+                <legend>LIBRARY</legend>
+                <table border="1" width="50%">
+                    <div id="resultado"></div>
+                    <tr>
+                        <th>ID:</th>
+                        <td><input type="number" id="id" placeholder="id"></td>
+                    </tr>
+                    <tr>
+                        <th>TARGET:</th>
+                        <td><input type="text" id="target" placeholder="target"></td>
+                    </tr>
+                    <tr>
+                        <th>CAPACITY:</th>
+                        <td><input type="number" id="capacity" placeholder="capacity"></td>
+                    </tr>
+                    <tr>
+                        <th>CATEGORY_ID:</th>
+                        <td><input type="number" id="category_id" placeholder="category_id"></td>
+                    </tr>
+                    <tr>
+                        <th>NAME:</th>
+                        <td><input type="text" id="name" placeholder="name"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick="traerInformacion()"> Consultar </button>
+                        </td>
+                        <td>
+                            <button onclick="guardarInformacion()"> Guardar </button>
+                            <button onclick="editarInformacion()"> Actualizar </button>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <div>
+                <fieldset style="width: 50%;">
+                    <legend>CLIENT</legend>
+                    <table border="1" width="50%">
+                        <div id="resultado2"></div>
+                        <tr>
+                            <th>ID:</th>
+                            <td><input type="number" id="id" placeholder="id"></td>
+                        </tr>
+                        <tr>
+                            <th>NAME:</th>
+                            <td><input type="text" id="name" placeholder="name"></td>
+                        </tr>
+                        <tr>
+                            <th>EMAIL:</th>
+                            <td><input type="text" id="email" placeholder="email"></td>
+                        </tr>
+                        <tr>
+                            <th>AGE:</th>
+                            <td><input type="number" id="age" placeholder="age"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button onclick="traerInformacionClient()"> Consultar </button>
+                            </td>
+                            <td>
+                                <button onclick="guardarInformacionClient()"> Guardar </button>
+                                <button onclick="editarInformacionClient()"> Actualizar </button>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div>
+
+            <div>
+                <fieldset style="width: 50%;">
+                    <legend>MESSAGE</legend>
+                    <table border="1" width="50%">
+                        <div id="resultado3"></div>
+                        <tr>
+                            <th>ID:</th>
+                            <td><input type="number" id="id" placeholder="id"></td>
+                        </tr>
+                        <tr>
+                            <th>MESSAGE:</th>
+                            <td><input type="text" id="messagetext" placeholder="messagetext"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button onclick="traerInformacionMessage()"> Consultar </button>
+                            </td>
+                            <td>
+                                <button onclick="guardarInformacionMessage()"> Guardar </button>
+                                <button onclick="editarInformacionMessage()"> Actualizar </button>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+            
+            </div>
+        </center>
+    </body>
+</html>
